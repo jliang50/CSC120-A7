@@ -1,4 +1,10 @@
 /* This is a stub for the Cafe class */
+
+/**
+ * The Cafe class represents a cafe that extends the Building class.
+ * It manages an inventory of coffee, sugar packets, cream, and cups.
+ * It allows selling coffee if enough inventory is available.
+ */
 public class Cafe extends Building {
     
     private int nCoffeeOunces; 
@@ -7,7 +13,7 @@ public class Cafe extends Building {
     private int nCups;
     
     /**
-     * Constructs a Cafe object with the provided name, address, number of floors, and initial inventory.
+     * Construct with provided name, address, number of floors, and initial inventory.
      *
      * @param name Name of the cafe
      * @param address Address of the cafe

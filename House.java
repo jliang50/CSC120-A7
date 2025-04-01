@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 
 /**
- * The class respresents the building class and manages the residents in the house.
+ * The House class respresents a type of the Building class and manages the residents in the house.
  */
 
 public class House extends Building {

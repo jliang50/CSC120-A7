@@ -3,7 +3,7 @@ import java.util.Hashtable;
 import java.util.Map;
 
 /**
- * This class extends the class building and manages the lists of books and collections.
+ * The Library class extends the Building class and manages the lists of books and collections.
  */
 public class Library extends Building {
 
