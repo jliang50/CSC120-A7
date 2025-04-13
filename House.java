@@ -15,8 +15,8 @@ public class House extends Building {
      *
      * @param name Name of the house
      * @param address Address of the house
-     * @para nFloors FLoors number in the house
-     * @para hasDiningRoom Whether the house has dining room, if it has, it is true, if it has not,  it is false.
+     * @param nFloors Number of floors in the house
+     * @param hasDiningRoom Whether the house has a dining room, if it has, it is true, if it has not,  it is false.
      */
     public House(String name, String address, int nFloors, boolean hasDiningRoom) {
         super(name, address, nFloors);
@@ -72,17 +72,13 @@ public class House extends Building {
     }
     
     /**
-     * Check if the name is a resident of the house.
+     * Check if a given student is a resident of the house.
      * 
-     * @param name name of the people that we want to check.
-     * @return true if the person's name is in residetn list, else return false.
+     * @param s the student we want to check.
+     * @return true if the student is in residents list, else return false.
      */
-    public boolean isResidents(Student s){
-      if(residents.contains(s)){
-        return true;
-      } else{
-        return false;
-      }
+    public boolean isResident(Student s){
+      return residents.contains(s);
     }
 
     /**
@@ -94,7 +90,7 @@ public class House extends Building {
         System.out.println("House Name: " + myHouse.getName());
         System.out.println("House Address: " + myHouse.getAddress());
         System.out.println("Number of Floors: " + myHouse.getFloors());
-        System.out.println("Has Dining Room: " + myHouse.hasDiningRoom);
+        System.out.println("Has Dining Room: " + myHouse.hasDiningRoom());
     }
 
 }
